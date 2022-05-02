@@ -8,11 +8,15 @@ import CardContainer from "./Components/card-container.js";
 function App() {
   return (
     <div className="App">
-      <Title />
-      <Instructions />
-      <CardContainer />
-      <Score />
-      <Levels />  
+      <div className="left-container">
+        <Score />
+        <Levels />  
+      </div>
+      <div className="right-container">
+        <Title />
+        <Instructions />
+        <CardContainer />
+      </div>
     </div>
   );
 }
