@@ -1,0 +1,19 @@
+.score-container{
+    margin-top: 25px;
+    margin-right: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+}
+
+.score-title{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.score-value{
+    color: rgba(143, 168, 62, 0.9);
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}

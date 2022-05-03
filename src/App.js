@@ -10,13 +10,16 @@ import generateCardData from "./Components/generateDB.js";
 
 function App() {
   const [allCardDB, setAllCardDB] = useState( generateCardData() );  
+  const [selectedDB, setSelectedDB] = useState( [5,7,8,9,12] );  
   const [modalState, setModalState] = useState( false );  
+  const [currentScore, setScore] = useState( 0 ); 
+  const [currentLevel, setLevel] = useState( 5 );
 
   return (
     <div className="App">
       <div className="left-container">
-        <Score/>
-        <Levels/>  
+        <Score currentScore={currentScore}/>
+        <Levels currentLevel={currentLevel} setLevel={setLevel} setScore={setScore} setAllCardDB={setAllCardDB} setselecteddDB={selectedDB}/>   
       </div>
       <div className="right-container">
         <Title />

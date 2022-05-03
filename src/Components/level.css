@@ -1,0 +1,41 @@
+.level-container{
+    margin-top: 40px;
+    margin-right: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+}
+ 
+.choose-level {
+     margin-bottom: 15px;
+     font-weight: 900;
+}
+ 
+.level{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 12px;
+}
+ 
+button {
+     background-color: rgba(180,209,81, 0.8);
+     border-radius: 5px;
+     padding: 5px 12px;
+     font-size: medium;
+     font-weight: bold;
+}
+ 
+button:hover {
+     background-color:rgba(230,236,87, 0.8);
+}
+ 
+button:focus {
+     background-color: rgba(255,212,92,1);
+     border: 3px solid black;
+}
+ 
+span {
+     font-size: small;
+     margin-top: 4px;
+     color: rgb(80, 80, 80);
+}
