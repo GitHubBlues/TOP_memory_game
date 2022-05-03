@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import "./card-container.css";
-import generateCardData from "./generateDB.js";
 
-const CardContainer = () => {
-  const [allCardDB, setAllCardDB] = useState( generateCardData() );  
-  
+const CardContainer = ( { allDB, setAllDB, setModal } ) => {
+
 
   const handleclick = (event) => {
-    let newDatabase = JSON.parse(JSON.stringify(allCardDB));
-    const card = allCardDB.findIndex(element => element.id === event.target.className);
-    if (allCardDB[card].selected) {
-      console.log("OOps");
+    let newDatabase = JSON.parse(JSON.stringify(allDB));
+    const card = allDB.findIndex(element => element.id === event.target.className);
+    if (allDB[card].selected) {
+      setModal( true );
     } else {
       newDatabase[card].selected = true;
-      setAllCardDB(newDatabase);
+      setAllDB(newDatabase);
       console.log("Well done");
     }
   };
@@ -22,7 +20,7 @@ const CardContainer = () => {
   const displayCards = () => {
     let tmp = [];
     for (let i=0; i<23; i++){
-      tmp.push(<img src = { allCardDB[i].name } key={ allCardDB[i].id } onClick={ handleclick } className={ allCardDB[i].id }/> );  
+      tmp.push(<img src = { allDB[i].name } key={ allDB[i].id } onClick={ handleclick } className={ allDB[i].id }/> );  
     } 
      return tmp; 
   };
