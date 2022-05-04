@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TOP_memory_game/static/css/main.44114d3b.css",
+    "main.js": "/TOP_memory_game/static/js/main.37b56a8b.js",
+    "static/media/Surfing.png": "/TOP_memory_game/static/media/Surfing.67d9051bb82abe9f9351.png",
+    "static/media/Lifesaver.png": "/TOP_memory_game/static/media/Lifesaver.3f602a0a15c62a0140ac.png",
+    "static/media/Fan.png": "/TOP_memory_game/static/media/Fan.7e4cf63fe03b94b1149a.png",
+    "index.html": "/TOP_memory_game/index.html",
+    "main.44114d3b.css.map": "/TOP_memory_game/static/css/main.44114d3b.css.map",
+    "main.37b56a8b.js.map": "/TOP_memory_game/static/js/main.37b56a8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44114d3b.css",
+    "static/js/main.37b56a8b.js"
+  ]
+}
