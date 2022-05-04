@@ -1,29 +1,27 @@
 @import-normalize;
 
 body {
-  --orange: rgba(246,204,132, 0.8);
-  --yellow : rgba(243,206,97, 0.8);
-  --red : rgba(250,134,70, 0.8);
-  background: linear-gradient(45deg, var(--red), var(--orange));
-  min-height: 100vh;
-  box-sizing: border-box;
+    --orange: rgba(246, 204, 132, 0.8);
+    --yellow: rgba(243, 206, 97, 0.8);
+    --red: rgba(250, 134, 70, 0.8);
+    background: linear-gradient(45deg, var(--red), var(--orange));
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .App {
-  display: flex;
-  text-align: center;
+    display: flex;
+    text-align: center;
 }
 
 .left-container {
-  width: 25rem;
-  margin: 15px;
-  max-width: 15rem;
-  border: 2px solid red;
+    width: 25rem;
+    margin: 15px;
+    max-width: 15rem;
 }
 
 .right-container {
-  margin-left: 10px;
-  margin-right: 20px;
-  width: 100%;
-  border: 2px solid red;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 100%;
 }

@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './level.css';
 import generateCardData from "./generateDB.js";
 import { selectCards } from "./utils.js";
 
 const Levels = ( {currentLevel, setLevel, setScore, setAllCardDB, setSelectedDB} ) => {
 
-
   function chooseLevel(event) {
     let level = event.target.id;
     setLevel( level );
-    
-    setScore();
+    setScore( 0 );
 
     let allCardDB = generateCardData(); 
     setAllCardDB( allCardDB );
@@ -40,8 +38,8 @@ const Levels = ( {currentLevel, setLevel, setScore, setAllCardDB, setSelectedDB}
       </div>   
 
       <div className="level">
-        { (currentLevel == 20) && <button onClick={ chooseLevel } id="20" style={{backgroundColor: "rgb(255,212,92)", border: '3px solid black' }}>normal</button>}
-        {!(currentLevel == 20) && <button onClick={ chooseLevel } id="20">normal </button>}
+        { (currentLevel == 20) && <button onClick={ chooseLevel } id="20" style={{backgroundColor: "rgb(255,212,92)", border: '3px solid black' }}>hard</button>}
+        {!(currentLevel == 20) && <button onClick={ chooseLevel } id="20">hard </button>}
         <span>20 cards</span>
       </div>  
 
@@ -60,4 +58,4 @@ const Levels = ( {currentLevel, setLevel, setScore, setAllCardDB, setSelectedDB}
   );
 }
 
-export default Levels;
+export default Levels; 
