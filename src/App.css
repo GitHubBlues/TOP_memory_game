@@ -1,10 +1,10 @@
 @import-normalize;
 
 body {
-    --orange: rgba(246, 204, 132, 0.8);
-    --yellow: rgba(243, 206, 97, 0.8);
-    --red: rgba(250, 134, 70, 0.8);
-    background: linear-gradient(45deg, var(--red), var(--orange));
+    --orange: rgba(250, 200, 112, 0.6);
+    --yellow: rgba(243, 206, 97, 0.6);
+    --red: rgba(250, 134, 70, 0.6);
+    background: linear-gradient(45deg, var(--red), var(--yellow));
     min-height: 100vh;
     box-sizing: border-box;
 }
